@@ -1,0 +1,21 @@
+{
+  "name": "Google Chorme's extension example",
+  "version": "0.1",
+  "description": "Build a Google Chrome's extension.",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "images/example.png"
+    }
+  },
+  "icons": {
+    "48": "images/example_icon.png"
+  },
+  "options_page": "option.html",
+  "manifest_version": 2
+}
